@@ -6,6 +6,7 @@ import { styles } from './styles';
 export default function Home() {
   const [participants, setParticipants] = useState<string[]>([]);
   const [participantName, setParticipantName] = useState('');
+  const getCurrentDate = new Date();
   
   function handleParticipantAdd() {
     if (participants.includes(participantName)) {
@@ -33,7 +34,7 @@ export default function Home() {
     <View style={styles.container}>
       <Text style={styles.eventName}>Nome do evento</Text>
 
-      <Text style={styles.eventDate}>Quarta 14 de Dezembro</Text>
+      <Text style={styles.eventDate}>{new Intl.DateTimeFormat('pt-BR', {timeZone: 'UTC', dateStyle: 'long'}).format(getCurrentDate)}</Text>
 
       <View style={styles.form}>
         <TextInput 
