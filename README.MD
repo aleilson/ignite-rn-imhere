@@ -10,7 +10,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="I am here" src=".github/imhere.png" />
+    <img alt="I am here event manager" src=".github/imhere-thumb.png" />
 </h1>
 
 <br>
